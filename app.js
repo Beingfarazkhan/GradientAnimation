@@ -28,14 +28,14 @@ let B = function (x, y, t) {
 };
 let t = 0;
 
-let run = function () {
+let animationRun = function () {
   for (x = 0; x <= 35; x++) {
     for (y = 0; y <= 35; y++) {
       col(x, y, R(x, y, t), G(x, y, t), B(x, y, t));
     }
   }
   t = t + 0.08;
-  window.requestAnimationFrame(run);
+  window.requestAnimationFrame(animationRun);
 };
 
-run();
+animationRun();
